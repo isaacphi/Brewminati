@@ -10,12 +10,10 @@ export const pageLayoutTemplate = `
     }
     .header-container {
       grid-area: header;
-      justify-self: center;
       width: 100%;
     }
     .nav-container {
       grid-area: nav;
-      justify-self: right;
     }
     .main-content-container {
       grid-area: main;

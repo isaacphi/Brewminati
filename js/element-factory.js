@@ -10,5 +10,9 @@ export const elementFactory = layout => class extends HTMLElement {
         template.content.cloneNode(true)
       );  
     }
+
+    connectedCallback() {
+      console.log('hi', this.innerHTML)
+    }
   }
   

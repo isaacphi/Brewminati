@@ -1,9 +1,13 @@
 export const mainContentTemplate = `
 <style>
-
+.main-content {
+    padding-top: 13px;
+    padding-left: 13px;
+    font-family: sans;
+}
 </style>
 
-<div>
-c
+<div class="main-content">
+    content
 </div>
 `

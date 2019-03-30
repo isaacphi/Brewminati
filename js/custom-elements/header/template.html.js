@@ -20,7 +20,7 @@ export const headerTemplate = `
 }
 .title {
     text-align: center;
-    font-family: 'alien';
+    font-family: 'alien', sans;
     font-size: 5em;
     height: 1em;
     color: white;
@@ -29,7 +29,7 @@ export const headerTemplate = `
 </style>
 
 <div class="icon-container">
-    <img class="brewminati-icon" src="/brewminati-icon.gif" height="200" width="200"> 
+    <img class="brewminati-icon" src="/js/custom-elements/header/brewminati-icon.gif" height="200" width="200"> 
 </div>
 <div class="title">
     BREWMINATI

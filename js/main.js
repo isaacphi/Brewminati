@@ -1,13 +1,13 @@
-import registerPageLayoutComponent from '/js/custom-elements/page-layout/page-layout.js'
-import registerNavComponent from '/js/custom-elements/nav/nav.js'
-import registerHeaderComponent from '/js/custom-elements/header/header.js'
-import registerMainContentComponent from '/js/custom-elements/main-content/main-content.js'
+import initPageLayoutComponent from '/js/custom-elements/page-layout/page-layout.js'
+import initNavComponent from '/js/custom-elements/nav/nav.js'
+import initHeaderComponent from '/js/custom-elements/header/header.js'
+import initMainContentComponent from '/js/custom-elements/main-content/main-content.js'
 
-const componentRegistration = [
-  registerPageLayoutComponent,
-  registerNavComponent,
-  registerHeaderComponent,
-  registerMainContentComponent,
+const componentInitialization = [
+  initPageLayoutComponent,
+  initNavComponent,
+  initHeaderComponent,
+  initMainContentComponent,
 ]
 
-componentRegistration.forEach(register => register())
+componentInitialization.forEach(init => init())
