@@ -6,11 +6,16 @@
     <title>Brewminati</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <page-layout>
-      <span slot="my-text">Let's have some different text!</span>
-    </page-layout>
-    
+    <style>
+    body { margin: 0; }
+    @font-face {
+    font-family: 'alien';
+    src: url('fonts/DCC-Thealiensarecoming.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+    </style>
+    <page-layout-component/>
     <script type="module" src="js/main.js"></script>
   </body>
 </html>

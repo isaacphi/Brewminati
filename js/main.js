@@ -1,18 +1,29 @@
-import { pageLayoutTemplate } from '/templates/page-layout.js'
+import { pageLayoutTemplate } from '/templates/page-layout-component.html.js'
+import { headerTemplate } from '/templates/header-component.html.js'
+import { navTemplate } from '/templates/nav-component.html.js'
+import { mainContentTemplate } from '/templates/main-content-component.html.js'
 
-customElements.define('page-layout',
-  class extends HTMLElement {
-    constructor() {
-      super();
+const elementFactory = layout => class extends HTMLElement {
+  constructor() {
+    super();
 
-      let t = document.createElement("template")
-      t.id = 'page-layout'
-      t.innerHTML = pageLayoutTemplate
+    const template = document.createElement("template")
+    template.innerHTML = layout
 
-      const shadowRoot = this.attachShadow({mode: 'open'})
-      shadowRoot.appendChild(
-        t.content.cloneNode(true)
-      );
-    }
+    const shadowRoot = this.attachShadow({mode: 'open'})
+    shadowRoot.appendChild(
+      template.content.cloneNode(true)
+    );  
   }
-);
+}
+
+const customElementTemplates = [
+  {name: 'page-layout-component', template: pageLayoutTemplate},
+  {name: 'header-component', template: headerTemplate},
+  {name: 'nav-component', template: navTemplate} ,
+  {name: 'main-content-component', template: mainContentTemplate},
+]
+
+customElementTemplates.forEach(
+  e => customElements.define(e.name, elementFactory(e.template))
+)
