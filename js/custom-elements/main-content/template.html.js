@@ -8,6 +8,6 @@ export const mainContentTemplate = `
 </style>
 
 <div class="main-content">
-    content
+    loading
 </div>
 `

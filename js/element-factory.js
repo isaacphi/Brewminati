@@ -8,7 +8,7 @@ export const elementFactory = layout => class extends HTMLElement {
       const shadowRoot = this.attachShadow({mode: 'open'})
       shadowRoot.appendChild(
         template.content.cloneNode(true)
-      );  
+      )
     }
   }
   
