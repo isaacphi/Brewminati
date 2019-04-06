@@ -22,5 +22,6 @@ export const navTemplate = `
     <a href="#" class="about nav-item">about</a>
     <a href="#rules" class="rules nav-item">club rules</a>
     <a href="#finance" class="finance nav-item">finance</a>
+    <a href="#brew-list" class="nav-item">brew list</a>
 </div>
 `
