@@ -1,19 +1,17 @@
 export const brewListTemplate = `
 <style>
 .brew-list{
-
+  border-collapse: collapse;
 }
-.grid-item{
-    
+tr:nth-child(odd){
+  background-color: #dfe3a7;  
+}
+tr:first-child{
+font-weight: bold;
+}
+td{
+padding: 3px;
 }
 </style> 
-<table class="brew-list">
-    <thead></thead>
-    <div class="grid-item">a</div>
-    <div class="grid-item">b</div>
-    <div class="grid-item">c</div>
-    <div class="grid-item">d</div>
-    <div class="grid-item">e</div>
-    <div class="grid-item">f</div>
-</div>
+<table class="brew-list"></table>
 `

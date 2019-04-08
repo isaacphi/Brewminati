@@ -2,11 +2,11 @@ export const pageLayoutTemplate = `
 <style>
     .page-grid-container {
       display: grid;
-      grid-template-columns: 20% auto 50px;
+      grid-template-columns: 200px auto;
       grid-template-rows: auto;
       grid-template-areas: 
         "header header header"
-        "nav main ."
+        "nav main main"
     }
     .header-container {
       grid-area: header;

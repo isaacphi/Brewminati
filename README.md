@@ -12,3 +12,4 @@ This the online home of the Brewminati Coop Club.
 - Autodeploy with CircleCI
 - More variable names as constants
 - favicon
+- make responsive

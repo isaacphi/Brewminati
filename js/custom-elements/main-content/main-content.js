@@ -1,5 +1,6 @@
 import { elementFactory } from '/js/element-factory.js'
 import { mainContentTemplate } from './template.html.js'
+import { brewListComponent } from '/js/custom-elements/brew-list/brew-list.js'
 
 /*
     Main content container
@@ -32,6 +33,7 @@ class mainContentComponent extends elementFactory(mainContentTemplate) {
         super()
         this.mainContent = this.shadowRoot.querySelector('.main-content')
         this.hashChangeHandler = this.hashChangeHandler.bind(this)
+	console.log(brewListComponent.tagName)
     }
 
     connectedCallback() {
