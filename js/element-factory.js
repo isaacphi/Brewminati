@@ -11,4 +11,3 @@ export const elementFactory = layout => class extends HTMLElement {
       )
     }
   }
-  

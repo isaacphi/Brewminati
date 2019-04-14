@@ -14,11 +14,9 @@ class aboutComponent extends elementFactory(aboutTemplate) {
     }
 
     connectedCallback() {
-        console.log('about')
     }
 
     disconnectedCallback() {
-        console.log('about disconnected')
     }
 }
 

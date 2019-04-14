@@ -6,9 +6,6 @@ export const brewListTemplate = `
 tr:nth-child(odd){
   background-color: #dfe3a7;  
 }
-tr:first-child{
-font-weight: bold;
-}
 td{
 padding: 3px;
 }

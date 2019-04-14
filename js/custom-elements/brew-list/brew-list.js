@@ -20,6 +20,10 @@ export class brewListComponent extends elementFactory(brewListTemplate) {
     }
 
     connectedCallback() {
+	this.fetchBrewList()
+    }
+
+    fetchBrewList() {
 	fetch(spreadsheetURL)
 	    .then(response => {
 		return response.json();
@@ -34,13 +38,11 @@ export class brewListComponent extends elementFactory(brewListTemplate) {
 	    })
 	    .catch(e => {
 		console.log('ERROR', e);
-	    });
-    }
-
-    disconnectedCallback()p {
-        console.log('brew-list disconnected')
+	    });	
     }
 }
+
+const populateSpreadsheet = (parent, data
 
 const addRow = (parent, data) => {
     const tr = document.createElement('tr')
@@ -65,6 +67,4 @@ const isLink = text => {
     return regex.test(text)
 }
 
-    //export default () => {
 customElements.define('brew-list-component', brewListComponent)
-//}

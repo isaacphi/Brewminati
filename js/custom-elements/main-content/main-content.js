@@ -33,7 +33,6 @@ class mainContentComponent extends elementFactory(mainContentTemplate) {
         super()
         this.mainContent = this.shadowRoot.querySelector('.main-content')
         this.hashChangeHandler = this.hashChangeHandler.bind(this)
-	console.log(brewListComponent.tagName)
     }
 
     connectedCallback() {
